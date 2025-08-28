@@ -10,6 +10,7 @@
 
 ## First Semester
 
+| Milestone | Content |
 | Plan (September 3rd) | NA |
 | Milestone One (September 29th) | NA |
 | Milestone Two (October 27) | NA  |
@@ -17,6 +18,8 @@
 
 ## Second Semester
 
+| Milestone | Content |
+| ——- | —— |
 | Plan () | NA |
 | Milestone Four () | NA |
 | Milestone Five () | NA  |
