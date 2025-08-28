@@ -9,15 +9,15 @@
 
 
 ## First Semester
+
 | Plan (September 3rd) | NA |
-| :------- | :------: |
 | Milestone One (September 29th) | NA |
 | Milestone Two (October 27) | NA  |
 | Milestone Three (November 24) | NA  |
 
 ## Second Semester
+
 | Plan () | NA |
-| :------- | :------: |
 | Milestone Four () | NA |
 | Milestone Five () | NA  |
 | Milestone Six () | NA  |
