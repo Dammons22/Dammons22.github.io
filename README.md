@@ -1,11 +1,11 @@
 # SCORE 2.0: Student Code Online Review and Evaluation 2.0
 ## Team Members:
-### Dorothy Ammons - dammons2022@my.fit.edu
-### Patrick Kelly
-### Shamik Bera - sbera2022@my.fit.edu
-### Rak Alsharif
+#### Dorothy Ammons - dammons2022@my.fit.edu
+#### Patrick Kelly
+#### Shamik Bera - sbera2022@my.fit.edu
+#### Rak Alsharif
 ## Falculty Advisor:
-### Raghuveer Mohan - rmohan@fit.edu
+#### Raghuveer Mohan - rmohan@fit.edu
 
 
 ## First Semester
