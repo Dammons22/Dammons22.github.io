@@ -3,7 +3,7 @@
 #### Dorothy Ammons - dammons2022@my.fit.edu
 #### Patrick Kelly - pkelly2022@my.fit.edu
 #### Shamik Bera - sbera2022@my.fit.edu
-#### Rak Alsharif
+#### Rak Alsharif - ralsharif2021@my.fit.edu
 ## Falculty Advisor:
 #### Raghuveer Mohan - rmohan@fit.edu
 
