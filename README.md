@@ -14,14 +14,14 @@
 | --------------- | ------- |
 | Plan (September 3rd) | NA |
 | Milestone One (September 29th) | NA |
-| Milestone Two (October 27) | NA  |
-| Milestone Three (November 24) | NA  |
+| Milestone Two (October 27th) | NA  |
+| Milestone Three (November 24th) | NA  |
 
 ## Second Semester
 
 | Milestone | Content |
 | --------------- | ------- |
-| Plan () | NA |
-| Milestone Four () | NA |
-| Milestone Five () | NA  |
-| Milestone Six () | NA  |
+| Plan (January 26th) | NA |
+| Milestone Four (February 23rd) | NA |
+| Milestone Five (March 30th) | NA  |
+| Milestone Six (April 20th) | NA  |
