@@ -1,130 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SCORE 2.0: Student Code Online Review and Evaluation 2.0</title>
-  <style>   
-    .small-names {
-      font-size: 1rem;      
-      margin-bottom: 2px;  
-      line-height: .5;
-      color: #333;            
-    }
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1, h2, h3, h4 {
-      color: #2c3e50;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1em;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #eee;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>SCORE 2.0</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #6b0f1a; /* maroon */
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  background: #8c1c2c;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.sidebar button:hover {
+  background: #a83244;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Sections */
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #eee;
+}
+
+/* Names */
+.small-names {
+  font-size: 1rem;
+  margin-bottom: 2px;
+  line-height: 1.2;
+}
+
+/* Logo */
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+}
+</style>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll(".section").forEach(sec => {
+    sec.classList.remove("active");
+  });
+  document.getElementById(id).classList.add("active");
+}
+</script>
+
 </head>
+
 <body>
-  <h1>SCORE 2.0:</h1>
-  <h2>Student Code Online Review and Evaluation 2.0</h2>
 
-  <h2>Team Members:</h2>
-    <p class="small-names"><strong>
-      Dorothy Ammons</strong> - <a href="mailto:dammons2022@my.fit.edu">dammons2022@my.fit.edu</a>
-    </p>
-    <p class="small-names"><strong>
-      Patrick Kelly</strong> - <a href="mailto:pkelly2022@my.fit.edu">pkelly2022@my.fit.edu</a>
-    </p>
-    <p class="small-names"><strong>
-      Shamik Bera</strong> - <a href="mailto:sbera2022@my.fit.edu">sbera2022@my.fit.edu</a>
-    </p>
-    <p class="small-names"><strong>Rak Alsharif</strong> - <a href="mailto:ralsharif2021@my.fit.edu">ralsharif2021@my.fit.edu</a>
-    </p>
+<div class="container">
 
-  <h2>Faculty Advisor:</h2>
-  <p><strong>Raghuveer Mohan</strong> – <a href="mailto:rmohan@fit.edu">rmohan@fit.edu</a></p>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="SCORE2.0Logo.png" class="logo">
+    <h2>SCORE 2.0</h2>
 
-  <h2>First Semester</h2>
-  <table>
-    <tr>
-      <th>Milestone</th>
-      <th>Content</th>
-    </tr>
-    <tr>
-      <td>Plan (September 3rd)</td>
-      <td><a href="SCORE(2.0)_Plan.pdf" target="_blank">Plan</a><br>
-      <a href="SCORE2.0_Presentation.pdf" target="_blank">Plan Presentation</a></td>
-    </tr>
-    <tr>
-      <td>Milestone One (September 29th)</td>
-      <td><a href="SCORE2.0_SRS.pdf" target="_blank">Software Requirements Specification</a><br>
-      <a href="SCORE2.0_Design_Document.pdf" target="_blank">Design Document</a><br>
-      <a href="SCORE2.0_Test_Plan.pdf" target="_blank">Test Plan</a><br>
-      <a href="Milestone1_Presentation.pdf" target="_blank">Milestone One Presentation</a><br>
-      <a href="Milestone_One_Progress_Evaluation.pdf" target="_blank">Milestone One Progress Evaluation</a></td>
-      
-    </tr>
-    <tr>
-      <td>Milestone Two (October 27th)</td>
-      
-      <td>
-        <a href="Milestone Two Progress Evaluation (2).pdf" target="_blank">Milestone Two Progress Evaluation</a><br>
-        <a href="Milstone2presentation.pdf" target="_blank">Milestone Two Presentation</a></td>
-      
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('milestones')">Milestones</button>
+    <button onclick="showSection('manuals')">Manuals & Info</button>
+  </div>
 
-    </tr>
-    <tr>
-      <td>Milestone Three (November 24th)</td>
-      <td>
-        <a href="Milestone Three Progress Evaluation.pdf" target="_blank">Milestone Three Progress Evaluation</a><br>
-        <a href="Milestone 3 presentation .pdf" target="_blank">Milestone Three Presentation</a></td>
-    </tr>
-  </table>
+  <!-- Content -->
+  <div class="content">
 
-  <h2>Second Semester</h2>
-  <table>
-    <tr>
-      <th>Milestone</th>
-      <th>Content</th>
-    </tr>
-    <tr>
-      <td>Plan (January 26th)</td>
-      <td><a href="SCORE2.0_Plan2.pdf" target="_blank">Plan</a><br>
-        <a href="SCORE2.0 plan presentation.pdf" target="_blank">Plan Presentation</a></td>
-    </tr>
-    <tr>
-      <td>Milestone Four (February 23rd)</td>
-      <td><a href="Milestone_Four_Progress_Evaluation.pdf" target="_blank">Milestone Four Progress Evaluation</a><br>
-        <a href="Milestone 4.pdf" target="_blank">Milestone Four Presentation</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Milestone Five (March 30th)</td>
-      <td><a href="Milestone Five Progress Evaluation (1).pdf" target="_blank">Milestone Five Progress Evaluation</a><br>
-        <a href="Milestone 5 Slides.pdf" target="_blank">Milestone Five Presentation</a><br>
-        <a href=" SCOREPoster.pdf" target="_blank">Showcase Poster</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Milestone Six (April 20th)</td>
-      <td><a href="" target="_blank">Milestone Six Progress Evaluation</a><br>
-        <a href="" target="_blank">Milestone Six Presentation</a><br>
-        <a href="User Manual.pdf" target="_blank">User Manual</a><br>
-        <a href="Developer Manual.pdf" target="_blank">Developer Manual</a></td>
-    </tr>
-  </table>
+    <!-- ABOUT -->
+    <div id="about" class="section active">
+      <h1>SCORE 2.0</h1>
+      <h2>Student Code Online Review and Evaluation 2.0</h2>
+
+      <h3>Team Members</h3>
+      <p class="small-names"><strong>Dorothy Ammons</strong> - dammons2022@my.fit.edu</p>
+      <p class="small-names"><strong>Patrick Kelly</strong> - pkelly2022@my.fit.edu</p>
+      <p class="small-names"><strong>Shamik Bera</strong> - sbera2022@my.fit.edu</p>
+      <p class="small-names"><strong>Rak Alsharif</strong> - ralsharif2021@my.fit.edu</p>
+
+      <h3>Faculty Advisor</h3>
+      <p><strong>Raghuveer Mohan</strong> – rmohan@fit.edu</p>
+    </div>
+
+    <!-- MILESTONES -->
+    <div id="milestones" class="section">
+      <h2>First Semester</h2>
+
+      <table>
+        <tr>
+          <th>Milestone</th>
+          <th>Content</th>
+        </tr>
+
+        <tr>
+          <td>Plan (September 3rd)</td>
+          <td>
+            <a href="SCORE(2.0)_Plan.pdf" target="_blank">Plan</a><br>
+            <a href="SCORE2.0_Presentation.pdf" target="_blank">Plan Presentation</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Milestone One (September 29th)</td>
+          <td>
+            <a href="SCORE2.0_SRS.pdf" target="_blank">Software Requirements Specification</a><br>
+            <a href="SCORE2.0_Design_Document.pdf" target="_blank">Design Document</a><br>
+            <a href="SCORE2.0_Test_Plan.pdf" target="_blank">Test Plan</a><br>
+            <a href="Milestone1_Presentation.pdf" target="_blank">Presentation</a><br>
+            <a href="Milestone_One_Progress_Evaluation.pdf" target="_blank">Progress Evaluation</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Milestone Two (October 27th)</td>
+          <td>
+            <a href="Milestone Two Progress Evaluation (2).pdf">Progress Evaluation</a><br>
+            <a href="Milstone2presentation.pdf">Presentation</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Milestone Three (November 24th)</td>
+          <td>
+            <a href="Milestone Three Progress Evaluation.pdf">Progress Evaluation</a><br>
+            <a href="Milestone 3 presentation .pdf">Presentation</a>
+          </td>
+        </tr>
+      </table>
+
+      <h2>Second Semester</h2>
+
+      <table>
+        <tr>
+          <th>Milestone</th>
+          <th>Content</th>
+        </tr>
+
+        <tr>
+          <td>Plan (January 26th)</td>
+          <td>
+            <a href="SCORE2.0_Plan2.pdf">Plan</a><br>
+            <a href="SCORE2.0 plan presentation.pdf">Presentation</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Milestone Four (February 23rd)</td>
+          <td>
+            <a href="Milestone_Four_Progress_Evaluation.pdf">Progress Evaluation</a><br>
+            <a href="Milestone 4.pdf">Presentation</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Milestone Five (March 30th)</td>
+          <td>
+            <a href="Milestone Five Progress Evaluation (1).pdf">Progress Evaluation</a><br>
+            <a href="Milestone 5 Slides.pdf">Presentation</a><br>
+            <a href="SCOREPoster.pdf">Poster</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Milestone Six (April 20th)</td>
+          <td>
+            <a href="">Progress Evaluation</a><br>
+            <a href="">Presentation</a><br>
+            <a href="User Manual.pdf">User Manual</a><br>
+            <a href="Developer Manual.pdf">Developer Manual</a>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <!-- MANUALS -->
+    <div id="manuals" class="section">
+      <h2>Manuals & Information</h2>
+
+      <p>
+        <a href="User Manual.pdf" target="_blank">User Manual</a>
+      </p>
+
+      <p>
+        <a href="Developer Manual.pdf" target="_blank">Developer Manual</a>
+      </p>
+
+      <p>
+        <a href="SCOREPoster.pdf" target="_blank">Showcase Poster</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
 </body>
 </html>
